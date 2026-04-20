@@ -1,7 +1,7 @@
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
 INC_DIR = ./inc
-INC_FLAGS = -I $(INC_DIR)
+INC_FLAGS = -I$(INC_DIR)
 TARGET = ClapTrap
 SRCS = 	main.cpp\
 		ClapTrap.cpp\
@@ -14,7 +14,7 @@ $(TARGET): $(OBJS)
 	@$(CPP) $(CPP_FLAGS) $(INC_FLAGS) $(OBJS) -o $(TARGET)
 
 %.o: %.cpp
-	@$(CPP) $(CPP_FLAGS) -c $< -o $@
+	@$(CPP)  $(INC_FLAGS) $(CPP_FLAGS) -c $< -o $@
 clean:
 	@rm -rf $(OBJS)
 
