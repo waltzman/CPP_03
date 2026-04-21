@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 17:30:04 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/21 17:49:11 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/21 17:57:02 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,9 @@ FragTrap::~FragTrap()
 void 	FragTrap::highFivesGuys(void)
 {
 	std::cout << FRAGTRAP_COLOR 
-	<< this->_name << " says: \"Give me a high five!\" 🖐️" 
+	<< this->_name << " says: \"Give me a high five!\""
 	<< RESET_COLOR
+	<< " 🖐️" 
 	<< std::endl;
 	
 }
