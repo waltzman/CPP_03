@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:51:57 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/21 14:24:17 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/21 17:21:23 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,17 +107,13 @@ void	ClapTrap::takeDamage(unsigned int amount)
 		this->_hit_points = 0;
 	else
 		std::cout << RED
-		<< "ClapTrap " 
-		<< this->_name << " is already dead."
+		<< "ClapTrap " << this->_name << " is already dead."
 		<< RESET_COLOR
 		<< std::endl;
-		return ;
 	std::cout << CLAPTRAP_COLOR
-	<< 	"ClapTrap " 
-	<< this->_name 
-	<< " was attacked! "
-	<< RESET_COLOR
+	<< 	"ClapTrap " << this->_name << " was attacked! " << RESET_COLOR
 	<< std::endl;
+	return ;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
