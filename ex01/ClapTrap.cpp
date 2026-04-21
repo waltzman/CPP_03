@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:51:57 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/21 14:23:58 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/21 14:24:17 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -136,7 +136,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 		std::cout << RED
 		<< "ClapTrap "
 		<< this->_name
-		<< " cannot repair itself !!!"
+		<< " cannot repair itself!!!"
 		<< RESET_COLOR
 		<< std::endl;
 }

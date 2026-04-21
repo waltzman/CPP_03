@@ -1,10 +1,11 @@
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
-TARGET = bsp
+INC_DIR = ./inc
+INC_FLAGS = -I$(INC_DIR)
+TARGET = scavTrap
 SRCS = 	main.cpp\
-		bsp.cpp\
-		Point.cpp\
-		Fixed.cpp\
+		ClapTrap.cpp\
+		ScavTrap.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -14,7 +15,7 @@ $(TARGET): $(OBJS)
 	@$(CPP) $(CPP_FLAGS) $(OBJS) -o $(TARGET)
 
 %.o: %.cpp
-	@$(CPP) $(CPP_FLAGS) -c $< -o $@
+	@$(CPP)  $(INC_FLAGS) $(CPP_FLAGS) -c $< -o $@
 clean:
 	@rm -rf $(OBJS)
 
