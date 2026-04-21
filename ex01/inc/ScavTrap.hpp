@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:27:40 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/21 14:16:03 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/21 17:38:16 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ class ScavTrap : public ClapTrap
 		ScavTrap(const ScavTrap &other);
 		~ScavTrap();
 
-		//ScavTrap &operator= (const ScavTrap &src);
 		void	attack(const std::string & target);
 		void	guardGate();
 };
