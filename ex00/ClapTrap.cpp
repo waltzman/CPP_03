@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 12:51:57 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/21 17:17:15 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/22 11:55:27 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ ClapTrap::ClapTrap(std::string name_str) : _name(name_str)
 	_energy_points = 10;
 	_attack_damage = 0;
 	std::cout << CLAPTRAP_COLOR 
-		<< "[ClapTrap constructor of "
+		<< "[ClapTrap parametrized constructor of "
 		<< _name
-		<< " constructor called]"
+		<< " called]"
 		<< RESET_COLOR
 		<< std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 17:30:04 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/22 10:21:08 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/22 11:58:41 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ FragTrap::FragTrap(std::string name_str)
 	this->_energy_points = 100;
 	this->_attack_damage = 30;
 	std::cout << FRAGTRAP_COLOR 
-	<< "[FragTrap constructor of "
+	<< "[FragTrap parametrized constructor of "
 	<< this->_name
-	<< " constructor called]"
+	<< " called]"
 	<< RESET_COLOR
 	<< std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 10:34:13 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/22 11:52:36 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/22 12:03:04 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@ DiamondTrap::DiamondTrap(std::string name_str)
 	this->_energy_points = ScavTrap::_energy_points;
 	this->_attack_damage = DiamondTrap::_attack_damage;
 	std::cout << DIAMONDTRAP_COLOR 
-	<< "[DiamondTrap parametrized constructor called]"
+	<< "[DiamondTrap parametrized constructor of "
+	<< this->_name 
+	<< " called]"
 	<< RESET_COLOR
 	<< std::endl;
 }
@@ -67,10 +69,9 @@ void DiamondTrap::whoAmI()
 	std::cout << DIAMONDTRAP_COLOR
 	<< "I am "
 	<< this->_name
-	<< " DiamondTrap" 
-	<< std::endl 
-	<< "and my ClapTrap name is: "
-	<< ClapTrap::_name
+	<< " DiamondTrap and my ClapTrap name is: "
+	<< ClapTrap::_name 
+	<< ""
 	<< RESET_COLOR
 	<< std::endl;
 }

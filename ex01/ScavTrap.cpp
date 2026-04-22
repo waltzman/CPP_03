@@ -6,7 +6,7 @@
 /*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/21 11:37:36 by rlobun            #+#    #+#             */
-/*   Updated: 2026/04/21 14:13:45 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/04/22 11:55:17 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ ScavTrap::ScavTrap(std::string name_str) : ClapTrap(name_str)
 	this->_energy_points = 50;
 	this->_attack_damage = 20;
 	std::cout << SCAVTRAP_COLOR 
-	<< "[ScavTrap constructor of "
+	<< "[ScavTrap parametrized constructor of "
 	<< this->_name
-	<< " constructor called]"
+	<< " called]"
 	<< RESET_COLOR
 	<< std::endl;
 }
