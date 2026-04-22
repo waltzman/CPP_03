@@ -1,8 +1,10 @@
 CPP = c++
 CPP_FLAGS = -Wall -Wextra -Werror -std=c++98
-TARGET = scavTrap
+TARGET = diamondTrap
 SRCS = 	main.cpp\
-		scavTrap.cpp
+		ScavTrap.cpp\
+		FragTrap.cpp\
+		DiamondTrap.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 
